@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu Chuẩn và Tương tác</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+  <nav class="menu" aria-label="Main navigation">
+    <div class="menu-container">
+      <div class="logo">MyWebsite</div>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menuList">
+        <span class="sr-only">Mở menu</span>☰
+      </button>
+
+      <ul class="menu-list" id="menuList">
+        <li><a href="#">Trang chủ</a></li>
+
+        <li class="has-submenu">
+          <button aria-expanded="false">Dịch vụ ▾</button>
+          <ul class="submenu" aria-label="Dịch vụ phụ">
+            <li><a href="#">Tư vấn</a></li>
+            <li><a href="#">Thiết kế</a></li>
+            <li><a href="#">Triển khai</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <button aria-expanded="false">Sản phẩm ▾</button>
+          <ul class="submenu" aria-label="Sản phẩm phụ">
+            <li><a href="#">Phần mềm</a></li>
+            <li><a href="#">Thiết bị</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+<header class="hero">
+    <div class="hero-content">
+      <h1>Chào mừng đến với Thế Giới Game</h1>
+      <p>Khám phá hàng trăm tựa game hấp dẫn – miễn phí, độc đáo và cập nhật liên tục!</p>
+      <a href="#" class="btn">Khám phá ngay</a>
+    </div>
+  </header>
+  
+  <!-- Giới thiệu -->
+  <section class="about">
+    <div class="container">
+      <h2>Về Chúng Tôi</h2>
+      <p>Website Game là nơi tập hợp những game hay nhất, từ game chiến thuật, nhập vai, hành động đến game mô phỏng thư giãn. Chúng tôi luôn cập nhật game mới mỗi ngày và cung cấp trải nghiệm chơi game mượt mà trên mọi thiết bị.</p>
+    </div>
+  </section>
+  
+  <!-- Tin Tức -->
+  <section class="news">
+    <div class="container">
+      <h2>Tin Game Mới</h2>
+      <div class="news-list">
+        <article>
+          <img src="https://via.placeholder.com/300x180" alt="Game mới">
+          <h3>Game bắn súng FPS siêu thực vừa ra mắt</h3>
+          <p>Thế giới game bắn súng đón chào bom tấn mới với đồ họa cực chất và chế độ chơi online hấp dẫn.</p>
+        </article>
+        <article>
+          <img src="https://via.placeholder.com/300x180" alt="Game nhập vai">
+          <h3>Top 5 game nhập vai đáng chơi 2025</h3>
+          <p>Cùng điểm danh những game nhập vai đang làm mưa làm gió trên thị trường trong năm nay.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Game Nổi Bật -->
+  <section class="featured">
+    <div class="container">
+      <h2>Game Nổi Bật</h2>
+      <div class="game-grid">
+        <div class="game-card">
+          <img src="https://via.placeholder.com/300x180" alt="Game 1">
+          <h4>Shadow Hunter</h4>
+          <p>Game hành động nhập vai với thế giới mở và cốt truyện hấp dẫn.</p>
+        </div>
+        <div class="game-card">
+          <img src="https://via.placeholder.com/300x180" alt="Game 2">
+          <h4>Battle Arena X</h4>
+          <p>MOBA đối kháng chiến thuật 5v5 cực hot với nhiều tướng mới.</p>
+        </div>
+        <div class="game-card">
+          <img src="https://via.placeholder.com/300x180" alt="Game 3">
+          <h4>City Builder</h4>
+          <p>Xây dựng thành phố trong mơ của bạn với hàng trăm công trình độc đáo.</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <script src="menu.js"></script>
+</body>
+</html>
